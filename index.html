@@ -1,107 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>انضم للقناة — صفحة هبوط</title>
-  <meta name="description" content="انضم لقناتنا على تيليجرام — توضيح سريع وإرشادات لو ظهر خطأ 'لا يمكن إكمال الإجراء'." />
-  <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#f7fafc" />
-  <!-- Simple, clean styles (RTL) -->
-  <style>
-    :root{
-      --bg:#f7fafc;
-      --card:#ffffff;
-      --muted:#6b7280;
-      --accent:#2563eb;
-      --accent-contrast:#fff;
-      --max-width:900px;
-      --radius:14px;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Naskh Arabic", "Cairo", sans-serif;
-    }
-    html,body{height:100%;margin:0;background:var(--bg);color:#0f172a;}
-    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:36px;}
-    .card{width:100%;max-width:var(--max-width);background:var(--card);border-radius:var(--radius);box-shadow:0 6px 24px rgba(15,23,42,0.06);padding:28px;box-sizing:border-box;}
-    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
-    .logo{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,#eef2ff,#fff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:20px}
-    h1{margin:0;font-size:20px}
-    p.lead{margin:8px 0 18px;color:var(--muted);line-height:1.5}
-    .features{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
-    .feature{display:flex;gap:10px;align-items:flex-start}
-    .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);margin-top:6px}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    .btn{background:var(--accent);color:var(--accent-contrast);padding:12px 18px;border-radius:10px;border:0;font-weight:700;text-decoration:none;display:inline-block}
-    .btn.secondary{background:transparent;color:var(--accent);border:2px solid rgba(37,99,235,0.12);}
-    .note{background:#fff7ed;border-left:4px solid #f59e0b;padding:12px;border-radius:8px;color:#92400e;margin-top:14px}
-    .small{font-size:13px;color:var(--muted);margin-top:12px}
-    footer{margin-top:20px;border-top:1px solid #eef2f6;padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    .privacy{font-size:13px;color:var(--muted)}
-    .copyright{font-size:13px;color:var(--muted);text-align:left}
-    .troubles{margin-top:14px;padding:14px;background:#f8fafc;border-radius:10px;color:#0f172a}
-    pre{background:#0f172a;color:#fff;padding:8px;border-radius:8px;overflow:auto;font-size:13px}
-    @media (min-width:720px){ .features{flex-direction:row} .feature{flex:1} .cta{justify-content:flex-start} }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAWLE MASR</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(-45deg, #6a11cb, #2575fc, #6a11cb, #2575fc);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            color: #fff;
+            text-align: center;
+        }
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+        .btn {
+            display: block;
+            width: 80%;
+            margin: 15px auto;
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        .join-btn {
+            background: #ff6f00;
+        }
+        .join-btn:hover {
+            background: #e65100;
+        }
+        .copy-btn {
+            background: #00b894;
+        }
+        .copy-btn:hover {
+            background: #009874;
+        }
+        .note {
+            background: rgba(0,0,0,0.4);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 0.95em;
+        }
+        .features {
+            margin: 30px 0;
+            text-align: right;
+        }
+        .features h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features ul li {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #ddd;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card" role="main" aria-labelledby="title">
-      <header>
-        <div class="logo" aria-hidden="true">قناتي</div>
-        <div>
-          <h1 id="title">انضم لقناتنا على تيليجرام</h1>
-          <p class="lead">صفحة هبوط بسيطة ونظيفة مخصصة للقناة. لو واجهت أي مشكلة في الانضمام اتبع التعليمات في الأسفل.</p>
+    <div class="container">
+        <h1>✨ مرحباً بك في DAWLE MASR ✨</h1>
+        <p>انضم الآن إلى مجتمعنا الخاص على تيليجرام، حيث تجد محتوى حصري، دعم متواصل،
+        ومجتمع قوي يساعدك على اكتشاف كل جديد.</p>
+
+        <a href="https://t.me/+r3B3nrTh-Cc3ODJk" class="btn join-btn">🚀 انضم الآن</a>
+        <button class="btn copy-btn" onclick="copyLink()">📋 انسخ رابط القناة</button>
+
+        <div class="features">
+            <h2>💡 ماذا ستحصل عند الانضمام؟</h2>
+            <ul>
+                <li>🔒 محتوى حصري غير متاح في أي مكان آخر</li>
+                <li>🤝 مجتمع داعم ومتفاعل</li>
+                <li>📈 متابعة مستمرة لكل جديد</li>
+            </ul>
         </div>
-      </header>
 
-      <section class="features" aria-label="مميزات القناة">
-        <div class="feature"><div class="dot" aria-hidden="true"></div><div><strong>محتوى واضح</strong><div class="small">تحديثات ومعلومات مُنسقة بدون وعود مُبالغ فيها.</div></div></div>
-        <div class="feature"><div class="dot" aria-hidden="true"></div><div><strong>سهولة الانضمام</strong><div class="small">زر واحد يفتح القناة في تطبيق تيليجرام.</div></div></div>
-        <div class="feature"><div class="dot" aria-hidden="true"></div><div><strong>خصوصيتك محفوظة</strong><div class="small">لا نجمع بيانات مالية أو حسّاسة من خلال هذه الصفحة.</div></div></div>
-      </section>
-
-      <div class="cta" role="region" aria-label="CTA">
-        <!-- Telegram link already embedded -->
-        <a class="btn" id="joinBtn" href="https://t.me/+3QGaa3UagG84MmVi" target="_blank" rel="noopener noreferrer">انضم الآن</a>
-        <button class="btn secondary" id="copyBtn" type="button" aria-label="انسخ اللينك">انسخ رابط القناة</button>
-        
-      </div>
-
-      <div class="troubles" aria-live="polite">
-        <strong>لو ظهر لك: «لا يمكن إكمال الإجراء»</strong>
-        <ol style="margin:8px 0 0 18px;line-height:1.6;color:#111">
-          <li>تأكد إن عندك تطبيق تيليجرام متثبت ومُحدَّث على الموبايل.</li>
-          <li>افتح تطبيق تيليجرام قبل الضغط على زر "انضم الآن"، أو انسخ اللينك وافتحه داخل التطبيق.</li>
-          <li>لو ما زبطش جرِّب جهاز/متصفح تاني أو استخدم Telegram Desktop أو web.telegram.org وسجّل دخول.</li>
-          <li>ممكن يكون الرابط منتهي الصلاحية أو مُلغى — لو كده ابعتلنا صورة للشاشة على الإيميل علشان نرسل لك لينك جديد.</li>
-        </ol>
-        <div class="note">مهم: لو القناة فيها خدمات مالية أو باقات استثمارية — ما تنشرش وعود أرباح مضمونة على الصفحة لأن ده ممكن يسبب رفض الإعلان على تيك توك.</div>
-      </div>
-
-      <footer>
-        <div class="privacy">لا يتم جمع أي بيانات مالية أو حساسة عبر هذه الصفحة. للمزيد راجع سياسة الخصوصية.</div>
-        <div class="copyright">حقوق الطبع والنشر © dawle masr</div>
-      </footer>
+        <div class="note">
+            ⚠️ ملاحظة هامة: في حالة ظهور رسالة <b>لا يمكن إكمال الإجراء</b> على الآيفون،  
+            برجاء الضغط على زر <b>انسخ رابط القناة</b> وفتح الرابط يدويًا في متصفح Safari أو Chrome. ✅
+        </div>
     </div>
-  </div>
 
-  <script>
-    // Copy link to clipboard (fallback friendly)
-    const copyBtn = document.getElementById('copyBtn');
-    const link = 'https://t.me/+3QGaa3UagG84MmVi';
-    copyBtn.addEventListener('click', async ()=>{
-      try{
-        await navigator.clipboard.writeText(link);
-        copyBtn.textContent = 'انسخ! ✅';
-        setTimeout(()=>copyBtn.textContent='انسخ رابط القناة',1800);
-      }catch(e){
-        prompt('انسخ اللينك يدوياً:', link);
-      }
-    });
+    <footer>
+        © 2025 DAWLE MASR - جميع الحقوق محفوظة
+    </footer>
 
-    // Small accessibility tweak: focus join button on load on mobile
-    if(/Mobi|Android/i.test(navigator.userAgent)){
-      document.getElementById('joinBtn').focus();
-    }
-  </script>
+    <script>
+        function copyLink() {
+            const link = "https://t.me/+r3B3nrTh-Cc3ODJk";
+            navigator.clipboard.writeText(link).then(() => {
+                alert("تم نسخ الرابط بنجاح ✅ افتحه الآن في المتصفح");
+            });
+        }
+    </script>
 </body>
 </html>
