@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAWLE MASR - انضم الآن</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 40px;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    .join {
+      background: #ff9800;
+      color: #fff;
+    }
+    .copy {
+      background: #009688;
+      color: #fff;
+    }
+    .features {
+      background: rgba(0,0,0,0.2);
+      padding: 50px 20px;
+      margin-top: 40px;
+      border-radius: 20px;
+    }
+    .features h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+    }
+    .features ul li {
+      margin: 10px 0;
+    }
+    .guide {
+      background: rgba(255,255,255,0.1);
+      padding: 30px 20px;
+      margin: 40px auto;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 15px;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 14px;
+      background: rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>DAWLE MASR</header>
+  <section class="hero">
+    <h1>انضم الآن إلى قناتنا الرسمية</h1>
+    <p>اضغط على الزر بالأسفل وابدأ رحلتك معنا 🚀</p>
+    <a href="https://t.me/+r3B3nrTh-Cc3ODJk" class="btn join">انضم الآن</a>
+    <button class="btn copy" onclick="copyLink()">📋 نسخ الرابط</button>
+  </section>
+
+  <section class="features">
+    <h2>ماذا ستحصل عند الانضمام؟</h2>
+    <ul>
+      <li>📈 فرص استثمار مميزة</li>
+      <li>🔒 محتوى موثوق وآمن</li>
+      <li>⚡ سرعة في التحديثات والمعلومات</li>
+    </ul>
+  </section>
+
+  <section class="guide">
+    <h2>هل واجهت مشكلة "لا يمكن إكمال الإجراء"؟</h2>
+    <p>لا تقلق ✅</p>
+    <p>لو ظهرلك الخطأ ده: </p>
+    <ol>
+      <li>انسخ الرابط باستخدام زر النسخ.</li>
+      <li>افتح تطبيق تليجرام يدويًا.</li>
+      <li>الصق الرابط في خانة البحث واضغط Enter.</li>
+    </ol>
+    <p>وهتدخل القناة بسهولة 😉</p>
+  </section>
+
+  <footer>
+    © 2025 DAWLE MASR - جميع الحقوق محفوظة
+  </footer>
+
+  <script>
+    function copyLink() {
+      const link = "https://t.me/+r3B3nrTh-Cc3ODJk";
+      navigator.clipboard.writeText(link).then(() => {
+        alert("✅ تم نسخ رابط القناة بنجاح!");
+      });
+    }
+  </script>
+</body>
+</html>
