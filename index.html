@@ -1,130 +1,139 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DAWLE MASR - انضم الآن</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      padding: 20px;
-      font-size: 26px;
-      font-weight: bold;
-    }
-    .hero {
-      padding: 80px 20px;
-    }
-    .hero h1 {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 40px;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 40px;
-      font-size: 20px;
-      font-weight: bold;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-    .btn:hover {
-      transform: scale(1.05);
-    }
-    .join {
-      background: #ff9800;
-      color: #fff;
-    }
-    .copy {
-      background: #009688;
-      color: #fff;
-    }
-    .features {
-      background: rgba(0,0,0,0.2);
-      padding: 50px 20px;
-      margin-top: 40px;
-      border-radius: 20px;
-    }
-    .features h2 {
-      font-size: 28px;
-      margin-bottom: 30px;
-    }
-    .features ul {
-      list-style: none;
-      padding: 0;
-      font-size: 18px;
-    }
-    .features ul li {
-      margin: 10px 0;
-    }
-    .guide {
-      background: rgba(255,255,255,0.1);
-      padding: 30px 20px;
-      margin: 40px auto;
-      width: 90%;
-      max-width: 600px;
-      border-radius: 15px;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 14px;
-      background: rgba(0,0,0,0.3);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAWLE MASR</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(-45deg, #6a11cb, #2575fc, #6a11cb, #2575fc);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            color: #fff;
+            text-align: center;
+        }
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+        .btn {
+            display: block;
+            width: 80%;
+            margin: 15px auto;
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        .join-btn {
+            background: #ff6f00;
+        }
+        .join-btn:hover {
+            background: #e65100;
+        }
+        .copy-btn {
+            background: #00b894;
+        }
+        .copy-btn:hover {
+            background: #009874;
+        }
+        .note {
+            background: rgba(0,0,0,0.4);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 0.95em;
+        }
+        .features {
+            margin: 30px 0;
+            text-align: right;
+        }
+        .features h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features ul li {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #ddd;
+        }
+    </style>
 </head>
 <body>
-  <header>DAWLE MASR</header>
-  <section class="hero">
-    <h1>انضم الآن إلى قناتنا الرسمية</h1>
-    <p>اضغط على الزر بالأسفل وابدأ رحلتك معنا 🚀</p>
-    <a href="https://t.me/+r3B3nrTh-Cc3ODJk" class="btn join">انضم الآن</a>
-    <button class="btn copy" onclick="copyLink()">📋 نسخ الرابط</button>
-  </section>
+    <div class="container">
+        <h1>✨ مرحباً بك في DAWLE MASR ✨</h1>
+        <p>انضم الآن إلى مجتمعنا الخاص على تيليجرام، حيث تجد محتوى حصري، دعم متواصل،
+        ومجتمع قوي يساعدك على اكتشاف كل جديد.</p>
 
-  <section class="features">
-    <h2>ماذا ستحصل عند الانضمام؟</h2>
-    <ul>
-      <li>📈 فرص استثمار مميزة</li>
-      <li>🔒 محتوى موثوق وآمن</li>
-      <li>⚡ سرعة في التحديثات والمعلومات</li>
-    </ul>
-  </section>
+        <a href="https://t.me/+r3B3nrTh-Cc3ODJk" class="btn join-btn">🚀 انضم الآن</a>
+        <button class="btn copy-btn" onclick="copyLink()">📋 انسخ رابط القناة</button>
 
-  <section class="guide">
-    <h2>هل واجهت مشكلة "لا يمكن إكمال الإجراء"؟</h2>
-    <p>لا تقلق ✅</p>
-    <p>لو ظهرلك الخطأ ده: </p>
-    <ol>
-      <li>انسخ الرابط باستخدام زر النسخ.</li>
-      <li>افتح تطبيق تليجرام يدويًا.</li>
-      <li>الصق الرابط في خانة البحث واضغط Enter.</li>
-    </ol>
-    <p>وهتدخل القناة بسهولة 😉</p>
-  </section>
+        <div class="features">
+            <h2>💡 ماذا ستحصل عند الانضمام؟</h2>
+            <ul>
+                <li>🔒 محتوى حصري غير متاح في أي مكان آخر</li>
+                <li>🤝 مجتمع داعم ومتفاعل</li>
+                <li>📈 متابعة مستمرة لكل جديد</li>
+            </ul>
+        </div>
 
-  <footer>
-    © 2025 DAWLE MASR - جميع الحقوق محفوظة
-  </footer>
+        <div class="note">
+            ⚠️ ملاحظة هامة: في حالة ظهور رسالة <b>لا يمكن إكمال الإجراء</b> على الآيفون،  
+            برجاء الضغط على زر <b>انسخ رابط القناة</b> وفتح الرابط يدويًا في متصفح Safari أو Chrome. ✅
+        </div>
+    </div>
 
-  <script>
-    function copyLink() {
-      const link = "https://t.me/+r3B3nrTh-Cc3ODJk";
-      navigator.clipboard.writeText(link).then(() => {
-        alert("✅ تم نسخ رابط القناة بنجاح!");
-      });
-    }
-  </script>
+    <footer>
+        © 2025 DAWLE MASR - جميع الحقوق محفوظة
+    </footer>
+
+    <script>
+        function copyLink() {
+            const link = "https://t.me/+r3B3nrTh-Cc3ODJk";
+            navigator.clipboard.writeText(link).then(() => {
+                alert("تم نسخ الرابط بنجاح ✅ افتحه الآن في المتصفح");
+            });
+        }
+    </script>
 </body>
 </html>
