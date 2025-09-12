@@ -1,130 +1,97 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DAWLE MASR - انضم الآن</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DAWLE MASR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      padding: 20px;
-      font-size: 26px;
-      font-weight: bold;
-    }
-    .hero {
-      padding: 80px 20px;
-    }
-    .hero h1 {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 40px;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 40px;
-      font-size: 20px;
-      font-weight: bold;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-    .btn:hover {
-      transform: scale(1.05);
-    }
-    .join {
-      background: #ff9800;
-      color: #fff;
-    }
-    .copy {
-      background: #009688;
-      color: #fff;
-    }
-    .features {
-      background: rgba(0,0,0,0.2);
-      padding: 50px 20px;
-      margin-top: 40px;
-      border-radius: 20px;
-    }
-    .features h2 {
-      font-size: 28px;
-      margin-bottom: 30px;
-    }
-    .features ul {
-      list-style: none;
-      padding: 0;
-      font-size: 18px;
-    }
-    .features ul li {
-      margin: 10px 0;
-    }
-    .guide {
-      background: rgba(255,255,255,0.1);
-      padding: 30px 20px;
-      margin: 40px auto;
-      width: 90%;
-      max-width: 600px;
-      border-radius: 15px;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 14px;
-      background: rgba(0,0,0,0.3);
-    }
+  :root{
+    --bg:#060606;--card:#0f0f10;--gold-1:#b8860b;--gold-2:#ffd700;
+    --telegram:#0088cc;--text:#eae6e1;--muted:#bdb6ae;
+    font-family:'Cairo',sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);direction:rtl}
+  .site-header{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid rgba(255,255,255,0.03);background:linear-gradient(180deg, rgba(0,0,0,0.6), transparent)}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo-mark{width:54px;height:54px;border-radius:12px;background:linear-gradient(135deg,var(--gold-1),var(--gold-2))}
+  .logo-text{font-weight:800;font-size:1.25rem;color:var(--gold-2)}
+  .nav-btn{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px 14px;border-radius:10px;color:var(--muted);text-decoration:none;font-weight:600;margin:0 4px}
+  .nav-btn:hover{color:var(--text)}
+  .hero{padding:40px 20px;text-align:center}
+  .hero-title{color:var(--gold-2);font-size:2rem;margin:10px 0}
+  .hero-sub{color:var(--muted);margin-bottom:20px}
+  .btn{padding:12px 22px;border-radius:10px;font-weight:700;border:none;cursor:pointer;text-decoration:none;display:inline-block;margin:6px}
+  .btn-telegram{background:var(--telegram);color:#fff}
+  .btn-gold{background:linear-gradient(90deg,var(--gold-1),var(--gold-2));color:#000}
+  .notice{margin-top:16px;background:rgba(255,215,0,0.04);padding:12px;border-radius:10px;color:var(--muted);display:inline-block;font-size:0.9rem}
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:1000px;margin:30px auto;padding:0 20px}
+  .card{background:var(--card);padding:20px;border-radius:14px}
+  .card h3{color:var(--gold-2)}
+  .card p{color:var(--muted)}
+  .faq{max-width:800px;margin:30px auto;padding:0 20px;color:var(--muted)}
+  .faq h2{color:var(--gold-2)}
+  .site-footer{padding:18px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:30px;font-size:0.9rem}
   </style>
 </head>
 <body>
-  <header>DAWLE MASR</header>
-  <section class="hero">
-    <h1>انضم الآن إلى قناتنا الرسمية</h1>
-    <p>اضغط على الزر بالأسفل وابدأ رحلتك معنا 🚀</p>
-    <a href="https://t.me/+r3B3nrTh-Cc3ODJk" class="btn join">انضم الآن</a>
-    <button class="btn copy" onclick="copyLink()">📋 نسخ الرابط</button>
-  </section>
+  <header class="site-header">
+    <div class="logo">
+      <div class="logo-mark"></div>
+      <div class="logo-text">DAWLE MASR</div>
+    </div>
+    <nav class="top-nav">
+      <a class="nav-btn" id="joinBtn" href="https://t.me/+RWuZSe3DyFJkYmE0" target="_blank" rel="noopener">انضم الآن</a>
+      <button class="nav-btn" id="copyBtn">📋 نسخ رابط القناة</button>
+    </nav>
+  </header>
 
-  <section class="features">
-    <h2>ماذا ستحصل عند الانضمام؟</h2>
-    <ul>
-      <li>📈 فرص استثمار مميزة</li>
-      <li>🔒 محتوى موثوق وآمن</li>
-      <li>⚡ سرعة في التحديثات والمعلومات</li>
-    </ul>
-  </section>
+  <main>
+    <section class="hero">
+      <h1 class="hero-title">بوابتك لتجربة مُختلفة</h1>
+      <p class="hero-sub">مكان يُعنى بالتجربة والوفاء بالمبدأ — تصميم راقي، تجربة منظمة، وبداية واضحة.</p>
+      <a class="btn btn-telegram" href="https://t.me/+RWuZSe3DyFJkYmE0" target="_blank" rel="noopener">انضم الآن</a>
+      <button class="btn btn-gold" id="copyBtn2">📋 نسخ رابط القناة</button>
+      <div class="notice">
+        <strong>ملاحظة:</strong> لو ظهر "لا يمكن إكمال الإجراء" — افتح الرابط من متصفح خارجي أو انسخه وافتحه داخل Telegram.
+      </div>
+    </section>
 
-  <section class="guide">
-    <h2>هل واجهت مشكلة "لا يمكن إكمال الإجراء"؟</h2>
-    <p>لا تقلق ✅</p>
-    <p>لو ظهرلك الخطأ ده: </p>
-    <ol>
-      <li>انسخ الرابط باستخدام زر النسخ.</li>
-      <li>افتح تطبيق تليجرام يدويًا.</li>
-      <li>الصق الرابط في خانة البحث واضغط Enter.</li>
-    </ol>
-    <p>وهتدخل القناة بسهولة 😉</p>
-  </section>
+    <section class="features">
+      <div class="card"><h3>تجربة مميزة</h3><p>واجهة مصممة بعناية لتمنح انطباعًا احترافيًا ومريحًا للزائر.</p></div>
+      <div class="card"><h3>خصوصية واحترام</h3><p>نهتم بالتعامل الراقي والشفافية في التواصل.</p></div>
+      <div class="card"><h3>خطوات بسيطة</h3><p>ضغط واحد للانضمام، أو نسخ الرابط ومشاركته بسهولة.</p></div>
+    </section>
 
-  <footer>
-    © 2025 DAWLE MASR - جميع الحقوق محفوظة
+    <section class="faq">
+      <h2>لو واجهت مشاكل في فتح الرابط</h2>
+      <ol>
+        <li>انسخ الرابط باستخدام زر "نسخ رابط القناة".</li>
+        <li>افتح متصفح Safari أو Chrome، والصق الرابط في شريط العنوان.</li>
+        <li>أو افتح Telegram وابحث بالرابط.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © DAWLE MASR 2025 – جميع الحقوق محفوظة
   </footer>
 
   <script>
-    function copyLink() {
-      const link = "https://t.me/+r3B3nrTh-Cc3ODJk";
-      navigator.clipboard.writeText(link).then(() => {
-        alert("✅ تم نسخ رابط القناة بنجاح!");
-      });
+  const link = "https://t.me/+RWuZSe3DyFJkYmE0";
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(()=>{alert("✅ تم نسخ الرابط")}).catch(()=>{alert("❌ لم يتم النسخ")})
+    } else {
+      const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();
+      try{document.execCommand('copy');alert("✅ تم نسخ الرابط")}catch(e){alert("❌ لم يتم النسخ")};ta.remove();
     }
+  }
+  document.addEventListener('DOMContentLoaded', ()=>{
+    document.getElementById('copyBtn').addEventListener('click', ()=>copyText(link));
+    document.getElementById('copyBtn2').addEventListener('click', ()=>copyText(link));
+  });
   </script>
 </body>
 </html>
