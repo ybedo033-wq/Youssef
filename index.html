@@ -1,86 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Trading E.G</title>
-    <style>
-        body {
-            font-family: 'Tahoma', sans-serif;
-            background: linear-gradient(135deg, #f0f0f0, #dcdcdc);
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            direction: rtl;
-        }
-        .container {
-            max-width: 600px;
-            margin: 80px auto;
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            padding: 30px;
-            transform: perspective(1000px) rotateX(0deg);
-            transition: transform 0.5s;
-        }
-        .container:hover {
-            transform: perspective(1000px) rotateX(3deg);
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            margin: 15px 0;
-            color: #444;
-        }
-        .amount {
-            font-size: 22px;
-            font-weight: bold;
-            color: #b12704;
-        }
-        .deadline {
-            font-size: 18px;
-            margin-top: 10px;
-            color: #0073e6;
-        }
-        p {
-            line-height: 1.7;
-            color: #555;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 20px;
-            background: #0073e6;
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: background 0.3s ease;
-        }
-        .btn:hover {
-            background: #005bb5;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #777;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Trading E.G</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+      direction: rtl;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.8;
+    }
+    h1 {
+      color: #222;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .amount {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    .highlight {
+      color: #d9534f;
+      font-weight: bold;
+    }
+    .deadline {
+      color: #007bff;
+      font-weight: bold;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🚀 The Trading E.G 🚀</h1>
-        <h2>العميلة: Khadija Mohamed Suleiman</h2>
-        <div class="amount">الرسوم المطلوبة: 920 ج.م</div>
-        <div class="deadline">الموعد النهائي للدفع: قبل الساعة 7:00 مساءً</div>
-        <p>عميلتنا الكريمة، نود إبلاغك أن دفع الرسوم المقررة (920 ج.م) ضروري لفك القيود على حساب أرباحك داخل النظام.<br>
-        برجاء العلم أن الأرباح لا يمكن سحبها إلا من خلالك شخصيًا فقط، ولا يملك أي عميل أو أي جهة أخرى صلاحية الوصول إليها.</p>
-        <p><strong>بعد التحويل، يرجى إرسال لقطة شاشة بعملية الدفع على التليجرام الرسمي الخاص بنا للتأكيد.</strong></p>
-        <a class="btn" href="https://t.me/T_D_E_G" target="_blank">تواصل عبر التليجرام</a>
-        <footer>© 2025 The Trading E.G – All Rights Reserved</footer>
-    </div>
+  <div class="card">
+    <h1>🚀 The Trading E.G 🚀</h1>
+    <p class="amount">العميلة: <strong>Zeinab Hassan Ahmed</strong></p>
+    <p class="amount">الرسوم المطلوبة: <span class="highlight">920 ج.م</span></p>
+    <p class="amount">الموعد النهائي للدفع: <span class="deadline">قبل الساعة 5:00 مساءً</span></p>
+    <p>
+      عميلتنا الكريمة، نود إبلاغك أن دفع الرسوم المقررة (920 ج.م) ضروري لفك القيود على حساب أرباحك داخل النظام.<br>
+      برجاء العلم أن الأرباح لا يمكن سحبها إلا من خلالك شخصيًا فقط، ولا يملك أي عميل أو أي جهة أخرى صلاحية الوصول إليها.
+    </p>
+    <p>
+      بعد التحويل، يرجى إرسال لقطة شاشة بعملية الدفع على التليجرام الخاص بنا للتأكيد.
+    </p>
+    <a class="btn" href="https://t.me/T_D_E_G">تواصل عبر التليجرام</a>
+    <footer>
+      The Trading E.G – All Rights Reserved 2025 ©
+    </footer>
+  </div>
 </body>
 </html>
